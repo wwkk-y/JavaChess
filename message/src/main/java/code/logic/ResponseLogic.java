@@ -17,11 +17,11 @@ public record ResponseLogic(Order order) {
         order.messageArea.append(order.responseService.getTargetIp() + ": " + params.get(0) + "\n");
     }
 
-    public void test(List<String> params){
+    public void sayHello(List<String> params){
         JOptionPane.showMessageDialog(order.frame, "hello");
     }
 
-    public void a(List<String> params){
+    public void showReturn(List<String> params){
         JOptionPane.showMessageDialog(order.frame, params);
     }
 
